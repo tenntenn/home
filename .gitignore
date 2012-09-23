@@ -1,0 +1,26 @@
+# all ignore
+/*
+/.*
+
+# alow belows
+
+# for git
+!/.gitignore
+
+# for vim
+!/.vimrc
+!/.vim/
+
+# for zsh
+!/.zshrc
+!/.zsh/
+
+# for bash
+!/.bashrc
+!/.bash_profile
+
+# for emacs
+!/.emacs.d/
+
+# for tmux
+!/.tmux.conf

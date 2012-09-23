@@ -1,0 +1,11 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =9
+let g:netrw_dirhist_1='/Users/ueda/Documents/program/go/pso-go/float64'
+let g:netrw_dirhist_2='/Users/ueda/.Trash/manuscript'
+let g:netrw_dirhist_3='/Users/ueda/.Trash'
+let g:netrw_dirhist_4='/Users/ueda/.Trash/manuscript'
+let g:netrw_dirhist_5='/Users/ueda/Documents/program/go/medes2011'
+let g:netrw_dirhist_6='/Users/ueda/Documents/program/go/medes2011/pkg'
+let g:netrw_dirhist_7='/Users/ueda/Documents/program/go/medes2011/pkg/pso'
+let g:netrw_dirhist_8='/Users/ueda/Documents/program/go/src/github.com/tenntenn/goweb-msgpack'
+let g:netrw_dirhist_9='/Users/ueda/Documents/program/gae-go/json2msgpack/src/json2msgpack'
