@@ -193,7 +193,7 @@ function tmux-reset-prefix(){
 # airportの設定
 ########################################
 SSID=`airport -I | grep \ SSID| sed 's/ //g' | sed 's/SSID://'`
-if [ $SSID == "Sys-wireless" ]; then
+if [ "$SSID" = "Sys-wireless" ]; then
     export PROXY="http://proxy.sys.cs.tut.ac.jp:3128"
     export https_proxy=$PROXY
     export http_proxy=$PROXY
