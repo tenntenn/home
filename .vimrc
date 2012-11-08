@@ -1,5 +1,5 @@
-set nocompatible               " be iMproved
-filetype off                   " required!
+set nocompatible
+filetype off
 
 set rtp+=~/.vim/bundle/vundle/
 call vundle#rc()
@@ -8,15 +8,18 @@ call vundle#rc()
 " required! 
 Bundle 'gmarik/vundle'
 
-"" My Bundles here:
-""
-"" original repos on github
-Bundle 'fholgado/minibufexpl.vim'
+Bundle 'Lokaltog/vim-powerline'
+Bundle 'JavaScript-syntax'
 Bundle 'pangloss/vim-javascript'
-Bundle 'scrooloose/syntastic'
+Bundle 'IndentAnything'
+
+filetype plugin indent on
 
 set tabstop=4
 set expandtab
-autocmd BufRead,BufNewFile *.go setfiletype go
+au BufRead,BufNewFile *.go setfiletype go
+au BufRead,BufNewFile *.js set ft=javascript fenc=utf-8
 syntax on
 set nu
+set guifont=Inconsolata_for_Powerline:h11:cANSI
+let g:Powerline_symbols='fancy'
