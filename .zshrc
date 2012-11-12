@@ -1,4 +1,4 @@
-#######################################
+########################################
 #一般的な設定
 ########################################
 
@@ -43,8 +43,10 @@ bindkey -e
 #エイリアスの設定
 ########################################
 
+#openで拡張子に関連付けされたアプリで開くように
+alias open='gnome-open'
 #lsを色付き表示
-alias ls='ls -G'
+alias ls='ls --color=auto'
 #詳細表示
 alias ll='ls -alh'
 
@@ -187,14 +189,3 @@ function tmux-change-prefix(){
 function tmux-reset-prefix(){
     tmux-set-prefix C-t
 }
-
-
-########################################
-# airportの設定
-########################################
-SSID=`airport -I | grep \ SSID| sed 's/ //g' | sed 's/SSID://'`
-if [ $SSID = "Sys-wireless" ]; then
-    export PROXY="http://proxy.sys.cs.tut.ac.jp:3128"
-    export https_proxy=$PROXY
-    export http_proxy=$PROXY
-fi

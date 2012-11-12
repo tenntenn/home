@@ -14,7 +14,7 @@
 # for zsh
 !/.zshrc
 !/.zsh/
-!/.env
+!/.zshenv
 
 # for bash
 !/.bashrc
