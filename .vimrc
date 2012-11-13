@@ -12,6 +12,7 @@ Bundle 'Lokaltog/vim-powerline'
 Bundle 'JavaScript-syntax'
 Bundle 'pangloss/vim-javascript'
 Bundle 'IndentAnything'
+Bundle 'mattn/zencoding-vim'
 
 filetype plugin indent on
 
