@@ -8,6 +8,11 @@ Bundle 'Lokaltog/vim-powerline'
 Bundle 'JavaScript-syntax'
 Bundle 'pangloss/vim-javascript'
 Bundle 'IndentAnything'
+Bundle 'mattn/zencoding-vim'
+Bundle 'mattn/multi-vim'
+Bundle 'tomtom/tcomment_vim'
+Bundle 'kchmck/vim-coffee-script'
+Bundle 'thinca/vim-quickrun'
 
 filetype plugin indent on
 
@@ -19,3 +24,6 @@ syntax on
 set nu
 set guifont=Inconsolata_for_Powerline:h11:cANSI
 let g:Powerline_symbols='fancy'
+
+let g:quickrun_config = {}
+let g:quickrun_config['coffee'] = {'command' : 'coffee', 'exec' : ['%c -cbp %s']}

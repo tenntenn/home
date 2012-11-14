@@ -188,13 +188,9 @@ function tmux-reset-prefix(){
     tmux-set-prefix C-t
 }
 
-
-########################################
-# airportの設定
-########################################
-SSID=`airport -I | grep \ SSID| sed 's/ //g' | sed 's/SSID://'`
-if [ "$SSID" = "Sys-wireless" ]; then
-    export PROXY="http://proxy.sys.cs.tut.ac.jp:3128"
-    export https_proxy=$PROXY
-    export http_proxy=$PROXY
+#########################################
+#Rubyの設定
+#########################################
+if [[ -s "/Users/wataraihiroaki/.rvm/scripts/rvm" ]] ; then
+    source "/Users/wataraihiroaki/.rvm/scripts/rvm"
 fi
