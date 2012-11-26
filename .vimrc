@@ -17,11 +17,11 @@ Bundle 'mattn/multi-vim'
 Bundle 'tomtom/tcomment_vim'
 Bundle 'kchmck/vim-coffee-script'
 Bundle 'thinca/vim-quickrun'
+Bundle 'jnwhiteh/vim-golang'
 
 filetype plugin indent on
 
 set tabstop=4
-set expandtab
 au BufRead,BufNewFile *.go setfiletype go
 au BufRead,BufNewFile *.js set ft=javascript fenc=utf-8
 syntax on
