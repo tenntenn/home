@@ -1,0 +1,18 @@
+#!/bin/sh
+
+window=$1
+
+if [ "$window" == "" ]; then
+	dir=`pwd`
+	window=`basename $dir`
+fi
+
+tmux rename-window $window
+
+tmux split-window -h -p 35
+tmux split-window -v -t $window.1
+tmux split-window -v -t $window.1
+tmux split-window -v -t $window.2
+
+tmux clock-mode -t $window.4
+tmux select-pane -t $window.0
